@@ -1,8 +1,4 @@
-Aqui está um resumo do aplicativo, formatado para um arquivo `readme.md` no Git, com base nas informações fornecidas:
-
----
-
-# Gopportunities: API Poderosa para Vagas de Emprego em Go
+# Go User Control: API Poderosa para Vagas de Emprego em Go
 
 Bem-vindo ao **Gopportunities**, um projeto que demonstra a construção de uma **API RESTful completa e robusta** em **Go (Golang)**. Esta API é projetada para gerenciar vagas de emprego (Job Openings), oferecendo funcionalidades completas de **CRUD (Criar, Ler, Atualizar, Deletar)** e uma documentação interativa detalhada.
 
