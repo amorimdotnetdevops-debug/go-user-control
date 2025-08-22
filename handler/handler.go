@@ -1,37 +1,6 @@
 package handler
 
-import (
-	"net/http"
-
-	"github.com/gin-gonic/gin"
-)
-
-func CreateAccessControlHandler(ctx *gin.Context) {
-	ctx.JSON(http.StatusOK, gin.H{
-		"message": "CreateAccessControlHandler",
-	})
-}
-
-func ShowAccessControlHandler(ctx *gin.Context) {
-	ctx.JSON(http.StatusOK, gin.H{
-		"message": "CreateAccessControlHandler",
-	})
-}
-
-func DeleteAccessControlHandler(ctx *gin.Context) {
-	ctx.JSON(http.StatusOK, gin.H{
-		"message": "CreateAccessControlHandler",
-	})
-}
-
-func UpdateAccessControlHandler(ctx *gin.Context) {
-	ctx.JSON(http.StatusOK, gin.H{
-		"message": "CreateAccessControlHandler",
-	})
-}
-
-func ListAccessControlHandler(ctx *gin.Context) {
-	ctx.JSON(http.StatusOK, gin.H{
-		"message": "CreateAccessControlHandler",
-	})
-}
+// This file is intentionally left blank as a placeholder for future handler implementations.
+// Individual handler functions are defined in their respective files within the same package.
+// For example, createUser.go, updateUser.go, deleteUser.go, and showUser.go each contain
+// specific handler functions related to user operations.
