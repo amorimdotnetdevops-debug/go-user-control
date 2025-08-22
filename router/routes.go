@@ -1,38 +1,17 @@
 package router
 
 import (
-	"net/http"
-
+	"github.com/amorimdotnetdevops-debug/go-user-control/handler"
 	"github.com/gin-gonic/gin"
 )
 
 func initializeRoutes(router *gin.Engine) {
 	v1 := router.Group("/api/v1")
 	{
-		v1.GET("/ping", func(c *gin.Context) {
-			c.JSON(http.StatusOK, gin.H{
-				"message": "GET",
-			})
-		})
-		v1.POST("/ping", func(c *gin.Context) {
-			c.JSON(http.StatusOK, gin.H{
-				"message": "POST",
-			})
-		})
-		v1.DELETE("/ping", func(c *gin.Context) {
-			c.JSON(http.StatusOK, gin.H{
-				"message": "DELETE",
-			})
-		})
-		v1.PUT("/ping", func(c *gin.Context) {
-			c.JSON(http.StatusOK, gin.H{
-				"message": "PUT",
-			})
-		})
-		v1.GET("/pings", func(c *gin.Context) {
-			c.JSON(http.StatusOK, gin.H{
-				"message": "GETs",
-			})
-		})
+		v1.GET("/ping", handler.ShowAccessControlHandler)
+		v1.POST("/ping", handler.CreateAccessControlHandler)
+		v1.DELETE("/ping", handler.DeleteAccessControlHandler)
+		v1.PUT("/ping", handler.UpdateAccessControlHandler)
+		v1.GET("/pings", handler.ListAccessControlHandler)
 	}
 }
