@@ -5,11 +5,18 @@ import (
 	"github.com/amorimdotnetdevops-debug/go-user-control/router"
 )
 
+var (
+	logger *config.Logger
+)
+
 func main() {
+	logger = config.GetLogger("main")
+
 	// Initialize configs
 	err := config.Init()
 	if err != nil {
-		panic("Failed to initialize config: " + err.Error())
+		logger.Errorf("Failed to initialize config: %v", err)
+		return
 	}
 
 	// Initialize router
