@@ -32,3 +32,7 @@ func GetLogger(p string) *Logger {
 	}
 	return logger
 }
+
+func GetSQLite() *gorm.DB {
+	return db
+}
