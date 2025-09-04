@@ -22,10 +22,6 @@ func Init() error {
 	return nil
 }
 
-func GetDB() *gorm.DB {
-	return db
-}
-
 func GetLogger(p string) *Logger {
 	if logger == nil {
 		logger = NewLogger(p)
